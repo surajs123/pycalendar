@@ -16,15 +16,27 @@ def calen(year,month):
     b=ans-1
     d=7-b
     da=1
+    
+    m = {'jan':'January','feb':'February','mar':'March','apr':'April','may':'May','jun':'June','jul':'July','aug':'August','sep':'September','oct':'October','nov':'November','dec':'December'}
+    print()
+    print()
+    print('\033[36m','\033[1m','   ',m[month], year,'\033[0m')
+    print()
+    print('\033[91m','sun','\033[0m','\033[94m','mon  tus  wed  thr  fri  sat','\033[0m')
+    print()
+
     for i in range (6):
         if b != 0:
             for i in range(1,b+1):
-                print('   ',end='')
+                print('   ',' ',end='')
                 b=0
                 
             
         for z in range (d):
-            print( '',da,'' , end='')
+            
+                
+            print( ' ',"%02d"% da,'', end='')
+            
             da=da+1
             if da > day:
                 break
@@ -32,3 +44,4 @@ def calen(year,month):
         if da > day:
                 break
         d=7
+    print()
