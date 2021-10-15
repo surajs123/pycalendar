@@ -4,21 +4,21 @@
 
 def year_start(year,month):
     val=0
-    if year == 1999: # the year staring with 1999
-        return 370%7
+    if year == 1970: # the year staring with 1970
+        return 369%7
 
-    if year < 1999:
-        return 'the year equal to 1999 or more than that '
+    if year < 1970:
+        return 'the year equal to 1970 or more than that '
     else:
-        n= year-1999
-        y=1999
+        n= year-1970
+        y=1970
         
         for i in range(n):
            
             if  (y%100)% 4 == 0:
                 val=val+366
-            elif y == 1999:
-                val=val+370 # 370 is the 365 day and extra 5 empty cloumn in the 1999 jan in starting 
+            elif y == 1970:
+                val=val+369 # 370 is the 365 day and extra 4 empty cloumn in the 1970 jan in starting 
 
             else:
                 val=val+365 
