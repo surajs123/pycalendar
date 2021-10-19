@@ -1,7 +1,7 @@
 # to create the calendar design 
 from calendarpkg.year_month import year_start
 
-def calen(year,month):
+def calendar(year,month):
     ans = year_start(year,month)
     if ans ==0:
         ans=7
@@ -45,3 +45,4 @@ def calen(year,month):
                 break
         d=7
     print()
+    
