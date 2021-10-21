@@ -1,10 +1,10 @@
 # to create the calendar design 
-from calendarpkg.year_month import year_start
+from py_calendar.year_month import month_start, year_start
+
 
 def calendar(year,month):
-    ans = year_start(year,month)
-    if ans ==0:
-        ans=7
+    ans = month_start(year,month)
+    
     # day arrangement 
     mont = {'jan':31,'feb':28,'mar':31,'apr':30,'may':31,'jun':30,'jul':31,'aug':31,'sep':30,'oct':31,'nov':30,'dec':31}
     
@@ -46,3 +46,7 @@ def calendar(year,month):
         d=7
     print()
     
+
+
+
+
