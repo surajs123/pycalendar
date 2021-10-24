@@ -1,4 +1,4 @@
-# py_calendar
+# py_calendars
 
 ### This package show the calendar view on the terminal when  you give the year and month also give the satring position of month and year
 
@@ -8,7 +8,7 @@
 
 
 ```
-from py_calendar import calendar
+from py_calendars import calendar
 
 calendar(2005,'jan')
 ```
@@ -41,7 +41,7 @@ calendar(2005,'jan')
 > if you want the year starting position import the year_start ( ) function
 
 ```
-from py_calendar import year_start
+from py_calendars import year_start
 
 print('ans= ', year_start(2005))
 ```
@@ -66,7 +66,7 @@ ans= 7
  >if you want the starting month position use month_start ( ) function
 
  ```
- from py_calendar import month_start
+ from py_calendars import month_start
 
 
 print('ans= ' month_start(2005,'nov'))
